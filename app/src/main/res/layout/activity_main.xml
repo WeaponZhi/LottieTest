@@ -7,7 +7,39 @@
     tools:context="com.sojex.weaponzhi.lottietest.MainActivity">
 
     <com.airbnb.lottie.LottieAnimationView
-        android:layout_width="match_parent"
+        android:id="@+id/lav_test"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/btn"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/lav_test"/>
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:text="隐藏开关"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lav_test_right"
+        android:layout_width="200dp"
+        android:layout_below="@+id/btn_right"
+        android:layout_alignParentRight="true"
+        android:layout_height="200dp"
+        android:visibility="gone"
+        />
+
+    <Button
+        android:id="@+id/btn_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="隐藏开关"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="下一页"
+        android:layout_alignParentBottom="true"
+        android:onClick="nextActivity"/>
 </RelativeLayout>
