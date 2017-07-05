@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
         mLottieAnimationView = (LottieAnimationView) findViewById(R.id.lav_test);
         mLottieUtil = new LottieUtil(mLottieAnimationView);
-        mLottieUtil.setAnimation("caishen.json", "images3/");
+        mLottieUtil.setAnimation("databaojian.json", "images4/");
         mButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
                     mLottieUtil.replaceAnimation("text2.json", "images2/");
                     a = true;
                 } else {
-                    mLottieUtil.replaceAnimation("caishen.json","images3/");
+                    mLottieUtil.replaceAnimation("databaojian.json","images4/");
                     a = false;
                 }
             }
