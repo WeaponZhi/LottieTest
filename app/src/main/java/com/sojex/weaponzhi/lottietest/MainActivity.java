@@ -24,7 +24,8 @@ public class MainActivity extends AppCompatActivity {
 
         mLottieAnimationView = (LottieAnimationView) findViewById(R.id.lav_test);
         mLottieUtil = new LottieUtil(mLottieAnimationView);
-        mLottieUtil.setAnimation("databaojian.json", "images4/");
+        mLottieUtil.setLoop(true);
+        mLottieUtil.setAnimation("datadabaojianssss.json", "images6/");
         mButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
