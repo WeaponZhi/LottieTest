@@ -21,7 +21,7 @@ public class TestActivity extends AppCompatActivity {
         setContentView(R.layout.activity_test);
         mLottieAnimationView = (LottieAnimationView) findViewById(R.id.lav_test1);
         mLottieAnimationView.setImageAssetsFolder("images2/");
-        mLottieAnimationView.useExperimentalHardwareAcceleration(true);
+        mLottieAnimationView.useExperimentalHardwareAcceleration();
         mLottieAnimationView.setAnimation("text2.json", LottieAnimationView.CacheStrategy.Weak);
         mLottieAnimationView.loop(true);
 

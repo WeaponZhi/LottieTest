@@ -7,7 +7,7 @@
 /build
 /captures
 .externalNativeBuild
-libs/
+
 src/main/res/drawable/
 /freeline
 /freeline_core

@@ -42,7 +42,6 @@ public class LottieUtil {
         setAnimation(fileName);
         mLottieAnimationView.setImageAssetsFolder(imageFolder);
     }
-
     /**
      * 替换现有的动画
      * @param fileName
