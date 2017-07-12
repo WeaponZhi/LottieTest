@@ -12,8 +12,7 @@ public class MainActivity extends AppCompatActivity {
     private LottieAnimationView mLottieAnimationView;
     private Button mButton, mButton1;
     private LottieUtil mLottieUtil;
-    private boolean a;
-
+    private int a = 1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,9 +22,10 @@ public class MainActivity extends AppCompatActivity {
         mButton1 = (Button) findViewById(R.id.btn_right);
 
         mLottieAnimationView = (LottieAnimationView) findViewById(R.id.lav_test);
+        mLottieAnimationView.setScale(0.5f);
         mLottieUtil = new LottieUtil(mLottieAnimationView);
         mLottieUtil.setLoop(true);
-        mLottieUtil.setAnimation("datadabaojianssss.json", "images6/");
+        mLottieUtil.setAnimation("data1.json", "images1/");
         mButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -36,15 +36,19 @@ public class MainActivity extends AppCompatActivity {
         mButton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (!a) {
-                    mLottieUtil.replaceAnimation("text2.json", "images2/");
-                    a = true;
-                } else {
-                    mLottieUtil.replaceAnimation("databaojian.json","images4/");
-                    a = false;
+                switch (a % 3) {
+                    case 1:
+                        mLottieUtil.replaceAnimation("data1.json","images1/");
+                        break;
+                    case 2:
+                        mLottieUtil.replaceAnimation("data2.json","images2/");
+                        break;
+                    case 0:
+                        mLottieUtil.replaceAnimation("data3.json","images3/");
+                        break;
                 }
-            }
-        });
+                a++;
+            }});
     }
 
     @Override

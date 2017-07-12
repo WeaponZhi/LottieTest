@@ -9,9 +9,12 @@
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/lav_test"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
+        android:scaleType="centerCrop"
+        android:layout_centerInParent="true"
+        android:background="@drawable/outline"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/btn"/>
+       />
 
     <Button
         android:id="@+id/btn"
